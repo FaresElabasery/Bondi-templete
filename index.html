@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="css/all.min.css">
     <!-- custom stylesheet -->
     <link rel="stylesheet" href="css/bondi.css">
+    <!-- jquery links -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <title>Bondi 🪁</title>
 </head>
 
@@ -47,6 +51,9 @@
                     </li>
                 </ul>
                 <div class="search ps-3 pe-3 d-none d-lg-block">
+                    <input type="search" name="search" id="search" aria-label="search button"
+                        placeholder="Search for services" onmouseenter="position()" onfocus="position()" onblur="positionX()">
+
                     <i class="fa-solid fa-magnifying-glass bg"></i>
                 </div>
                 <a class="btn rounded-pill main-btn" href="#">Login</a>
@@ -371,21 +378,26 @@
                         <h5 class="text-light text-capitalize">contact us</h5>
                         <p class="lh-lg mt-3 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cum
                             fuga </p>
-                        <a id="contact" class="btn rounded-pill main-btn w-100" href="mailto: fareselabasery@outlook.com">
+                        <a id="contact" class="btn rounded-pill main-btn w-100"
+                            href="mailto: fareselabasery@outlook.com">
                             fareselabasery@outlook.com </a>
                         <ul class="list-unstyled d-flex gap-5 mt-4 justify-content-center">
 
                             <li>
-                                <a class="d-block text-light" href="#"><i class="fa-brands fa-lg rounded-circle p-2 fa-facebook-f facebook"></i></a>
+                                <a class="d-block text-light" href="#"><i
+                                        class="fa-brands fa-lg rounded-circle p-2 fa-facebook-f facebook"></i></a>
                             </li>
                             <li>
-                                <a class="d-block text-light" href="#"><i class="fa-brands fa-lg rounded-circle p-2 fa-twitter twitter"></i></a>
+                                <a class="d-block text-light" href="#"><i
+                                        class="fa-brands fa-lg rounded-circle p-2 fa-twitter twitter"></i></a>
                             </li>
                             <li>
-                                <a class="d-block text-light" href="#"><i class="fa-brands fa-lg rounded-circle p-2 fa-linkedin-in linkedin"></i></a>
+                                <a class="d-block text-light" href="#"><i
+                                        class="fa-brands fa-lg rounded-circle p-2 fa-linkedin-in linkedin"></i></a>
                             </li>
                             <li>
-                                <a class="d-block text-light" href="#"><i class="fa-brands fa-lg rounded-circle p-2 fa-github github"></i></a>
+                                <a class="d-block text-light" href="#"><i
+                                        class="fa-brands fa-lg rounded-circle p-2 fa-github github"></i></a>
                             </li>
 
 
@@ -398,6 +410,7 @@
     <script src=" js/bootstrap.bundle.min.js"></script>
     <!-- font-awesome -->
     <script src="js/all.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

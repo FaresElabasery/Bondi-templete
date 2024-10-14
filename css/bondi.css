@@ -56,7 +56,6 @@ body {
 
 .navbar .search {
     border-left: 1px solid var(--green-color);
-    overflow-x: hidden;
 }
 
 .navbar .search svg {
@@ -66,18 +65,19 @@ body {
 .navbar #search {
     opacity: 0;
     width: 0;
-    transition: all 0.3s linear;
-}
-
-.navbar .search:hover #search,
-.navbar .search:focus #search {
-    opacity: 1;
-    width: 10rem;
     outline: var(--dark-color);
     background-color: var(--dark-color);
     border: none;
+    transition: all 0.3s linear;
     color: var(--green-color);
+    border-bottom: 2px solid #fff;
 }
+
+/* .navbar .search:hover #search,
+.navbar .search:focus #search {
+    opacity: 1;
+    width: 10rem;
+} */
 
 .navbar .search:hover #search::placeholder {
     color: var(--green-color)
