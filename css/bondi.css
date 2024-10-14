@@ -1,7 +1,7 @@
 :root {
     --dark-color: #19283f;
     --green-color: #33D1CC;
-    --red-color: #FF3150;
+    --red-color: #Eb0023;
     --yellow-color: #FFC400;
     --section-color: #EFF7FA;
 }
@@ -12,16 +12,18 @@ body {
 
 .main-btn {
     background-color: var(--red-color);
-    color: var(--yellow-color);
+    color: #fff;
     padding: 0.5rem 1rem;
     transition: all 0.3s ease-in-out;
+    font-weight: 500;
+
 }
 
 .main-btn:hover,
 .main-btn.active {
-    background-color: #f70b2e;
-    color: var(--yellow-color);
-    padding: 0.5rem 1.2rem;
+    background-color: #d00b29;
+    color: var(--dark-color);
+    font-weight: 500;
 }
 
 .main-title::after {
@@ -54,11 +56,31 @@ body {
 
 .navbar .search {
     border-left: 1px solid var(--green-color);
+    overflow-x: hidden;
 }
 
 .navbar .search svg {
     color: var(--green-color);
+}
 
+.navbar #search {
+    opacity: 0;
+    width: 0;
+    transition: all 0.3s linear;
+}
+
+.navbar .search:hover #search,
+.navbar .search:focus #search {
+    opacity: 1;
+    width: 10rem;
+    outline: var(--dark-color);
+    background-color: var(--dark-color);
+    border: none;
+    color: var(--green-color);
+}
+
+.navbar .search:hover #search::placeholder {
+    color: var(--green-color)
 }
 
 .navbar .navbar-toggler {
@@ -126,8 +148,8 @@ body {
 }
 
 .our-work ul .active {
-    background-color: var(--red-color);
-    color: var(--yellow-color);
+    background-color: #d00b29;
+    color: #fff;
 }
 
 .our-work ul li {
@@ -138,8 +160,6 @@ body {
 
 .our-work ul li:not(.active):hover {
     color: var(--yellow-color);
-    font-size: 1.1rem;
-    ;
 }
 
 .our-work .box {
@@ -221,7 +241,8 @@ body {
 }
 
 .subscribe a {
-    color: var(--yellow-color);
+    color: #fff;
+    font-weight: 500;
 }
 
 .subscribe input[type="email"] {
@@ -281,4 +302,5 @@ footer .contact .linkedin {
 footer .contact .github {
     background-color: #6e5494;
 }
+
 /* end footer */
