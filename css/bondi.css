@@ -224,6 +224,9 @@ body {
     transition: 0.3s;
     transform: scale(1.01);
 }
+.blog .card{
+    cursor: pointer;
+}
 
 /* end blogs */
 
