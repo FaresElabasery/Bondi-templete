@@ -73,12 +73,6 @@ body {
     border-bottom: 2px solid #fff;
 }
 
-/* .navbar .search:hover #search,
-.navbar .search:focus #search {
-    opacity: 1;
-    width: 10rem;
-} */
-
 .navbar .search:hover #search::placeholder {
     color: var(--green-color)
 }
